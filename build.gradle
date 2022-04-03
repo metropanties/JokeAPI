@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+mainClassName = 'me.metropanties.jokeapi.Main'
+group 'me.metropanties.jokeapi'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.javalin:javalin:4.4.0'
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.2.2'
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+    implementation 'org.postgresql:postgresql:42.3.3'
+}
+
+compileJava.options.encoding = 'UTF-8'

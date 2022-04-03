@@ -1,0 +1,10 @@
+{
+  "port": 8080,
+  "database": {
+    "host": "localhost",
+    "username": "postgres",
+    "password": "password",
+    "database": "rest_api",
+    "port": 5432
+  }
+}
